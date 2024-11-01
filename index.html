@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengertian Investasi dan Jenis-Jenisnya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #FFFFFF;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .accordion {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .accordion.active, .accordion:hover {
+            background-color: #0056b3;
+        }
+        .panel {
+            padding: 10px 15px;
+            display: none;
+            background-color: #f1f1f1;
+            overflow: hidden;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pengertian Investasi dan Jenis-Jenisnya</h1>
+</header>
+
+<div class="container">
+    <!-- Bagian Pengantar dengan Gambar -->
+    <div class="section">
+        <p>Investasi adalah tindakan atau proses mengalokasikan sejumlah sumber daya, seperti uang, waktu, atau usaha, ke dalam suatu aset atau proyek dengan harapan mendapatkan keuntungan di masa depan. Tujuan utama dari investasi adalah untuk menghasilkan imbal hasil atau pendapatan yang lebih besar dari jumlah sumber daya yang diinvestasikan. Investasi dapat dilakukan dalam berbagai bentuk aset, termasuk saham, obligasi, real estat, mata uang, komoditas, perusahaan startup, dan banyak lagi.</p>
+        <img src="https://linebank.co.id/blog/wp-content/uploads/2022/08/6216058383cbf.png" alt="Pengertian Investasi dan Jenis-Jenisnya">
+    </div>
+
+    <!-- Jenis-jenis Investasi -->
+    <div class="section">
+        <h2>Tujuan investasi bervariasi tergantung pada kebutuhan, tujuan keuangan, dan preferensi setiap individu.</h2>
+        <button class="accordion">Forex</button>
+        <div class="panel">
+            <p>Forex melibatkan perdagangan mata uang asing. Investor berusaha memanfaatkan perbedaan nilai tukar antara mata uang untuk mendapatkan keuntungan.</p>
+            <img src="https://awsimages.detik.net.id/community/media/visual/2023/05/29/freepik.png?w=600&q=90" alt="Forex">
+        </div>
+
+        <button class="accordion">Real Estate</button>
+        <div class="panel">
+            <p>Investasi dalam real estat mencakup kepemilikan properti fisik seperti tanah, rumah, apartemen, atau komersial. Keuntungan dapat diperoleh dari apresiasi nilai properti dan pendapatan sewa.</p>
+            <img src="https://siplawfirm.id/wp-content/uploads/2022/06/property2-1.jpg" alt="Real Estat">
+        </div>
+
+        <button class="accordion">Komoditas</button>
+        <div class="panel">
+            <p>Komoditas adalah barang mentah atau bahan baku, seperti minyak, emas, gandum, atau logam industri. Investasi dalam komoditas dapat dilakukan melalui kontrak berjangka atau reksa dana komoditas.</p>
+            <img src="https://storage.googleapis.com/storage-ajaib-prd-platform-wp-artifact/2020/04/investasi-komoditas.jpg" alt="Komoditas">
+        </div>
+    </div>
+
+    <!-- Tips Memulai Investasi -->
+    <div class="section">
+        <h2>Tips Memulai Investasi</h2>
+        <p>Untuk memulai investasi dengan aman, penting bagi pemula untuk mengikuti beberapa tips berikut:</p>
+        <ul>
+            <li>Tujuan Investasi.</li>
+            <li>Pahami risiko yang ada pada setiap instrumen investasi.</li>
+            <li class="tooltip">Diversifikasi portofolio
+                <span class="tooltiptext">Diversifikasi adalah membagi investasi Anda ke berbagai instrumen untuk mengurangi risiko.</span>
+            </li>
+            <li>Mulailah dengan jumlah kecil dan tingkatkan secara bertahap.</li>
+        </ul>
+        <img src="https://blog.modalku.co.id/wp-content/uploads/2023/02/Tujuan-Investasi.jpg" alt="5 Tips Aman Berinvestasi">
+    </div>
+
+    <!-- Countdown Timer dengan Redirect -->
+    <div class="section">
+        <h2>Menuju ke Halaman Utama</h2>
+        <p id="timerMessage">Anda akan diarahkan ke halaman hadiah anda <span id="countdown">3</span> detik...</p>
+    </div>
+</div>
+
+<script>
+    // Accordion untuk membuka/tutup konten
+    const accordions = document.getElementsByClassName("accordion");
+    for (let i = 0; i < accordions.length; i++) {
+        accordions[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            const panel = this.nextElementSibling;
+            panel.style.display = panel.style.display === "block" ? "none" : "block";
+        });
+    }
+
+    // Countdown Timer
+    let countdown = 3;
+    const countdownElement = document.getElementById('countdown');
+    const timerMessage = document.getElementById('timerMessage');
+
+    const countdownInterval = setInterval(() => {
+        countdown--;
+        countdownElement.textContent = countdown;
+        if (countdown <= 0) {
+            clearInterval(countdownInterval);
+            window.location.href = "https://t.ly/kolamhadiah"; // Link tujuan
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
